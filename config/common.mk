@@ -239,6 +239,12 @@ PRODUCT_PACKAGES_DEBUG += \
     procrank \
     strace
 
+ifneq ($(DISABLE_MICROG), true)
+#Fake Signature Permission
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/com.google.android.gms.xml:system/etc/permissions/com.google.android.gms.xml
+endif
+
 # Conditionally build in su
 ifneq ($(TARGET_BUILD_VARIANT),user)
 ifeq ($(WITH_SU),true)
