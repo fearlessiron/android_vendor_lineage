@@ -256,6 +256,9 @@ endif
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
+PRODUCT_PACKAGE_OVERLAYS := vendor/lineage/overlay/microg
+#PRODUCT_PACKAGES += GmsCore GsfProxy FakeStore MozillaNlpBackend NominatimNlpBackend FDroid FDroidPrivilegedExtension
+
 PRODUCT_VERSION_MAJOR = 16
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE := 0
