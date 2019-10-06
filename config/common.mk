@@ -92,8 +92,9 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/privapp-permissions-cm-legacy.xml:system/etc/permissions/privapp-permissions-cm-legacy.xml
 
 # Enforce privapp-permissions whitelist
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.control_privapp_permissions=enforce
+# FLO 20191006 *Don't* enforce, otherwise me.phh.treble.app will cause a boot crash due to missing privapp-permissions
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#    ro.control_privapp_permissions=enforce
 
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
