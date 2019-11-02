@@ -252,6 +252,15 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+# MicroG
+PRODUCT_PACKAGES += \
+    FakeStore \
+    FDroidPrivilegedExtension \
+    GmsCore \
+    GsfProxy \
+    MozillaNlpBackend \
+    NominatimNlpBackend \
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
